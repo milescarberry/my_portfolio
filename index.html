@@ -22,11 +22,11 @@
 				
 				<img src="./images/logo.png" class="logo">
 
-				<ul>
+				<ul id = "side-menu">
 					
 					<li>
 
-						<a href="#">Home</a>
+						<a href="#header">Home</a>
 
 
 
@@ -35,17 +35,7 @@
 
 					<li>
 
-						<a href="#">About</a>
-
-
-
-					</li>
-
-
-
-					<li>
-
-						<a href="#">Services</a>
+						<a href="#about">About</a>
 
 
 
@@ -55,7 +45,17 @@
 
 					<li>
 
-						<a href="#">Portfolio</a>
+						<a href="#services">Services</a>
+
+
+
+					</li>
+
+
+
+					<li>
+
+						<a href="#portfolio">Portfolio</a>
 
 
 
@@ -64,15 +64,19 @@
 
 					<li>
 
-						<a href="#">Contact</a>
+						<a href="#contact">Contact</a>
 
 
 
 					</li>
 
-
+					<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
 
 				</ul>
+
+				<i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+
 
 
 			</nav>
@@ -439,6 +443,79 @@
 	</div>
 
 
+	<!-- ---------------------------------contact section--------------------------- -->
+
+
+	<div id="contact">
+
+
+		<div class="container">
+			
+			<div class="row">
+				
+				<div class="contact-left">
+					
+					<h1 class="sub-title">Contact Me</h1>
+
+					<!-- <p><i class="fa-regular fa-envelope"></i> analyst.adityanambiar@gmail.com</p> -->
+
+					<div class="social-media-icons">
+<!-- 						
+						<a href="https://github.com/milescarberry"><i class="fa-brands fa-square-github"></i></a>
+
+						<a href="https://www.linkedin.com/in/asnambiar/"><i class="fa-brands fa-square-linkedin"></i></a>
+
+						<a href="https://www.twitter.com/analyst_asn/"><i class="fa-brands fa-square-twitter"></i></a> -->
+
+
+						<a href="https://github.com/milescarberry" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+
+						<!-- <a href="https://linkedin.com/in/asnambiar" target="_blank"><i class="fa-brands fa-linkedin"></i></a> -->
+
+						<a href="https://twitter.com/analyst_asn" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+
+					</div>
+
+					<a href="./images/my-cv.pdf" download target = "_blank" class = 'btn btn-cv'>Download CV</a>
+
+				</div>
+
+				<div class="contact-right">
+					
+					<form name = 'submit-to-google-sheet'>
+						
+						<input type="text" name="Name" placeholder = "Your Name" required>
+
+						<input type="email" name="Email" placeholder="Your Email" required>
+
+						<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+
+						<button type="submit" class="btn btn-cv">Submit</button>
+
+					</form>
+
+					<span id = "post-message"></span>
+
+
+				</div>
+
+			</div>
+
+		</div>
+
+
+		<div class="copyright">
+			
+
+			<p>Copyright © Aditya Nambiar</p>
+
+		</div>
+		
+
+
+	</div>
+
+
 	<script type="text/javascript">
 		
 
@@ -565,10 +642,89 @@
 			document.getElementsByClassName('show-container')[0].style.visibility = 'visible';
 
 
+			document.getElementsByClassName("work")[0].scrollIntoView();
+
+
+
+		}
+
+
+		function openmenu(){
+
+
+			document.getElementById("side-menu").style.right = '0';
+
+		}
+
+
+		function closemenu(){
+
+
+			document.getElementById("side-menu").style.right = '-200px';
+
 		}
 
 
 			
+
+	</script>
+
+
+	<script>
+
+	  const scriptURL = 'https://script.google.com/macros/s/AKfycbwCCU-4B39djXMoh6OnPUidYAXLMqgG4ugT3yGlrdVtWx9Mz0RIPFHTmKLevFeMM8jD/exec'
+
+	  const form = document.forms['submit-to-google-sheet']
+
+	  const msg = document.getElementById("post-message")
+
+	  form.addEventListener('submit', e => {
+	    e.preventDefault()
+	    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+	      .then(response => {
+
+	      	console.log('Success!', response)
+
+	      	msg.innerHTML = "Message Sent Successfully."
+
+
+	      	setTimeout(
+
+	      		function(){
+
+	      			msg.innerHTML = ""
+
+	      		}, 5000
+
+	      		)
+
+
+	      	form.reset()
+
+
+	      })
+	      .catch(error => {
+
+
+	      	console.error('Error!', error.message)
+
+
+	      	msg.style.color = "#8d1d1c"
+	      	
+
+	      	msg.innerHTML('There was an error in sending the message.')
+
+
+	      	setTimeout(function(){
+
+	      		msg.innerHTML = ""
+
+	      	}, 5000)
+
+
+
+	      })
+	  })
 
 	</script>
 		
