@@ -276,6 +276,169 @@
 	</div>
 
 
+	<!-- ----------------------portfolio section-------------------------------- -->
+
+	<div id="portfolio">
+		
+		<div class="container">
+			
+			<h1 class="sub-title">
+				
+
+				My Work
+
+
+			</h1>
+
+
+			<div class="work-list">
+
+
+				<div class="work" onmouseover="showlayer('worktitle1', 'img1')" onmouseleave="hidelayer('worktitle1', 'img1')">
+					
+					<img src="./images/work-1.png" id = 'img1'>
+
+
+					<div class="layer" id = 'worktitle1'>
+						
+						<h3>Work Title 1</h3>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio sequi aperiam iste, natus dolorum laborum accusamus, maxime soluta repellendus, minus quo? Culpa reprehenderit recusandae rerum porro dignissimos. Dolor, quos.</p>
+
+						<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+					</div>
+
+
+				</div>
+
+
+				<div class="work" onmouseover="showlayer('worktitle2', 'img2')" onmouseleave="hidelayer('worktitle2', 'img2')">
+					
+					<img src="./images/work-2.png" id = 'img2'>
+
+					<div class="layer" id = 'worktitle2'>
+						
+						<h3>Work Title 2</h3>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio sequi aperiam iste, natus dolorum laborum accusamus, maxime soluta repellendus, minus quo? Culpa reprehenderit recusandae rerum porro dignissimos. Dolor, quos.</p>
+
+						<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="work" onmouseover="showlayer('worktitle3', 'img3')"  onmouseleave="hidelayer('worktitle3', 'img3')">
+					
+					<img src="./images/work-3.png" id = 'img3'>
+
+					<div class="layer" id = 'worktitle3'>
+						
+						<h3>Work Title 3</h3>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio sequi aperiam iste, natus dolorum laborum accusamus, maxime soluta repellendus, minus quo? Culpa reprehenderit recusandae rerum porro dignissimos. Dolor, quos.</p>
+
+						<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+					</div>
+
+				</div>
+
+
+
+			</div>
+
+
+			<a href="#" class="btn show-container" onclick="showcontainer('see-more')">See more</a>
+
+
+
+		</div>
+
+
+		<div class="container" id = "see-more" hidden>
+			
+			<!-- <h1 class="sub-title">
+				
+
+				My Work
+
+
+			</h1>
+ -->
+
+			<div class="work-list">
+
+
+				<div class="work" onmouseover="showlayer('worktitle1', 'img1')" onmouseleave="hidelayer('worktitle1', 'img1')">
+					
+					<img src="./images/work-1.png" id = 'img1'>
+
+
+					<div class="layer" id = 'worktitle1'>
+						
+						<h3>Work Title 1</h3>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio sequi aperiam iste, natus dolorum laborum accusamus, maxime soluta repellendus, minus quo? Culpa reprehenderit recusandae rerum porro dignissimos. Dolor, quos.</p>
+
+						<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+					</div>
+
+
+				</div>
+
+
+				<div class="work" onmouseover="showlayer('worktitle2', 'img2')" onmouseleave="hidelayer('worktitle2', 'img2')">
+					
+					<img src="./images/work-2.png" id = 'img2'>
+
+					<div class="layer" id = 'worktitle2'>
+						
+						<h3>Work Title 2</h3>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio sequi aperiam iste, natus dolorum laborum accusamus, maxime soluta repellendus, minus quo? Culpa reprehenderit recusandae rerum porro dignissimos. Dolor, quos.</p>
+
+						<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+					</div>
+
+				</div>
+
+
+
+				<div class="work" onmouseover="showlayer('worktitle3', 'img3')"  onmouseleave="hidelayer('worktitle3', 'img3')">
+					
+					<img src="./images/work-3.png" id = 'img3'>
+
+					<div class="layer" id = 'worktitle3'>
+						
+						<h3>Work Title 3</h3>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos optio sequi aperiam iste, natus dolorum laborum accusamus, maxime soluta repellendus, minus quo? Culpa reprehenderit recusandae rerum porro dignissimos. Dolor, quos.</p>
+
+						<a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+
+					</div>
+
+				</div>
+
+
+
+			</div>
+
+
+			<a href="#" class="btn hide-container" onclick="hidecontainer('see-more')">See less</a>
+
+
+
+		</div>
+	</div>
+
+
 	<script type="text/javascript">
 		
 
@@ -310,9 +473,105 @@
 
 
 		}
+
+
+		// function showlayer(layerelement, imgelement){
+
+
+		// 	var element = document.getElementById(layerelement);
+
+		// 	var image = document.getElementById(imgelement);
+
+		// 	var currWidth = image.clientWidth;
+
+
+		// 	image.style.width = (currWidth + 100) + "px";
+
+
+		// 	element.style.height = "100%";
+
+		// }
+
+
+
+		// function hidelayer(layerelement, imgelement){
+
+
+		// 	var element = document.getElementById(layerelement);
+
+		// 	var image = document.getElementById(imgelement);
+
+		// 	var currWidth = image.clientWidth;
+			
+
+		// 	image.style.width = (currWidth - 100) + "px";
+
+
+
+		// 	element.style.height = "0";
+
+
+		// }
+
+
+		document.getElementsByClassName('show-container')[0].addEventListener('click', function (e) {
+
+		    e.preventDefault();
+
+		    doSomething();
+
+		})
+
+
+		document.getElementsByClassName('hide-container')[0].addEventListener('click', function (e) {
+
+		    e.preventDefault();
+
+		    doSomething();
+
+		})
+
+
+
+		function showcontainer(containerelement){
+
+
+			document.getElementById("see-more").removeAttribute('hidden');
+
+
+			document.getElementById("see-more").scrollIntoView();
+
+
+			// document.getElementById("see-more").style.overflowY = "scroll";
+
+			// document.getElementById("see-more").style.maxHeight = "100vh";
+
+
+			// event.currentTarget.setAttribute('hidden', '');
+
+
+			document.getElementsByClassName('show-container')[0].style.visibility = 'hidden';
+
+
+		}
+
+
+		function hidecontainer(containerelement){
+
+
+			document.getElementById("see-more").setAttribute('hidden', '');
+
+
+			document.getElementsByClassName('show-container')[0].style.visibility = 'visible';
+
+
+		}
+
+
 			
 
 	</script>
+		
 	
 </body>
 </html>
