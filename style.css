@@ -35,7 +35,7 @@ body{
 
 	height: 100vh;
 
-	background-image: url(./images/background.png);
+/*	background-image: url(./images/background.png);*/
 
 	background-size: cover;
 
@@ -63,9 +63,10 @@ nav{
 }
 
 
+
 .logo{
 
-	width: 140px;
+	width: 170px;
 }
 
 
@@ -76,6 +77,7 @@ nav ul li{
 	list-style: none;
 
 	margin: 10px 20px;
+
 }
 
 
@@ -100,7 +102,7 @@ nav ul li a::after{
 
 	height: 3px;
 
-	background: #ff004f;
+	background: #0ab4f5;
 
 	position: absolute;
 
@@ -125,6 +127,8 @@ nav ul li a:hover::after{
 	margin-top: 18%;
 
 	font-size: 30px;
+
+	text-align: center;
 }
 
 
@@ -138,7 +142,7 @@ nav ul li a:hover::after{
 
 .header-text h1 span{
 
-	color: #ff004f;
+	color: #0ab4f5;
 }
 
 
@@ -184,7 +188,10 @@ nav ul li a:hover::after{
 
 .about-second-col{
 
-	flex-basis: 60%;
+/*	flex-basis: 60%;*/
+
+  flex-basis: 60%;
+
 }
 
 
@@ -230,7 +237,7 @@ nav ul li a:hover::after{
 
 	height: 3px;
 
-	background: #ff004f;
+	background: #0ab4f5;
 
 	position: absolute;
 
@@ -261,7 +268,7 @@ nav ul li a:hover::after{
 
 .tab-contents ul li span{
 
-	color: #b54769;
+	color: #4897b5;
 
 	font-size: 14px;
 }
@@ -364,7 +371,7 @@ nav ul li a:hover::after{
 
 .services-list div:hover{
 
-	background: #ff004f;
+	background: #0ab4f5;
 
 	transform: translateY(-10px);
 
@@ -427,7 +434,7 @@ nav ul li a:hover::after{
 
 	height: 0;
 
-	background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+	background: linear-gradient(rgba(0, 0, 0, 0.6), #0ab4f5);
 
 	border-radius: 10px;
 
@@ -471,7 +478,7 @@ nav ul li a:hover::after{
 
 	margin-top: 20px;
 
-	color: #ff004f;
+	color: #0ab4f5;
 
 	text-decoration: none;
 
@@ -514,7 +521,7 @@ nav ul li a:hover::after{
 
 	width: fit-content;
 
-	border: 1px solid #ff004f;
+	border: 1px solid #0ab4f5;
 
 	padding: 14px 50px;
 
@@ -534,7 +541,7 @@ nav ul li a:hover::after{
 
 .btn:hover{
 
-	background: #ff004f;
+	background: #0ab4f5;
 }
 
 
@@ -562,7 +569,7 @@ nav ul li a:hover::after{
 
 .contact-left p i{
 
-	color: #ff004f;
+	color: #0ab4f5;
 
 	margin-right: 15px;
 
@@ -574,7 +581,7 @@ nav ul li a:hover::after{
 
 	margin-top: 30px;
 
-/*	margin-left: 39px;*/
+	margin-left: 128px;
 
 }
 
@@ -598,7 +605,7 @@ nav ul li a:hover::after{
 
 .social-media-icons a:hover{
 
-	color: #ff004f;
+	color: #0ab4f5;
 
 	transform: translateY(-5px);
 
@@ -609,7 +616,7 @@ nav ul li a:hover::after{
 
 	display: inline-block;
 
-/*	background: #ff004f;*/
+/*	background: #0ab4f5;*/
 
 }
 
@@ -722,7 +729,7 @@ nav .fa-solid{
 
 	nav ul{
 
-		background: #ff004f;
+		background: #0ab4f5;
 
 
 		postion: fixed;
