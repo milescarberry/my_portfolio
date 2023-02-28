@@ -427,6 +427,8 @@ nav ul li a:hover::after{
 
 	transition: transform 0.5s;
 
+	height: 400px;
+
 }
 
 
